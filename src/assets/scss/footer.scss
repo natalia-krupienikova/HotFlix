@@ -1,0 +1,56 @@
+.footer {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #1a191ffb;
+    border-top: 1px solid #27242e;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+
+    &__container {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__copyright {
+        font-size: 12px;
+        line-height: 16px;
+        color: rgba(255,255,255,0.6);
+        letter-spacing: 0.4px;
+    }
+
+    &__networks {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__link{
+        font-size: 30px;
+        color: #f9ab00;
+
+        &:hover {
+            scale: 1.1;
+            color: #fff;
+        }
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .footer {
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .footer {
+        padding-top: 15px;
+        flex-direction: column;
+    }
+}

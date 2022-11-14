@@ -1,0 +1,131 @@
+.about-bg {
+    background-image: url(../../../public/src/img/about-bg.webp);
+    height: 200px;
+    background-size: cover;
+    background-position-y: center;
+    padding-left: 60px;
+    
+    &__title {
+        font-family: 'Source Sans Pro', sans-serif;
+        margin: 0;
+        color: #fff;
+        line-height: 44px;
+        font-size: 34px;
+        align-items: center;
+        padding-top: 80px;
+    }
+}
+
+.about {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #1a191f;
+    color: #fff;
+    padding: 0 60px 40px;
+
+    &__subtitle {
+        font-size: 34px;
+        line-height: 44px;
+        padding-top: 60px;
+
+        &:hover {
+            color: #f9ab00;
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 26px;
+        margin-top: 30px;
+    }
+
+    &__benefits {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 30px;
+        margin-top: 20px;
+
+        
+        &-item {
+            display: flex;
+        }
+
+        &-icon {
+            color: #f9ab00;
+            font-size: 30px;
+            margin-right: 25px;
+            margin-top: 30px;
+        }
+
+        &-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-title {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 20px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+
+            &:hover {
+                color: #f9ab00;
+            }
+        }
+
+        &-text {
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .about {
+        padding: 0 30px 20px;
+
+        &__subtitle {
+            padding-top: 30px;
+        }
+
+        &__benefits {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 15px;
+            margin-top: 10px;
+        }
+    }  
+}
+
+@media screen and (max-width: 550px) {
+    .about-bg {
+        padding: 0;
+
+        &__title {
+            text-align: center;
+        }
+    }
+
+    .about {
+        &__benefits {
+            grid-template-columns: 1fr;
+            gap: 7px;
+            margin-top: 5px;
+
+            &-text {
+                font-size: 14px;
+                line-height: 23px;
+            }
+        }
+
+        &__subtitle {
+            font-size: 27px;
+            text-align: center;
+        }
+
+        &__text {
+            font-size: 14px;
+        }
+    }
+}

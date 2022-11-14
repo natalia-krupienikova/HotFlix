@@ -1,0 +1,122 @@
+.sign-in {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-image: url(../../../public/src/img/about-bg.webp);
+    height: calc(100vh - 170px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+    &__form {
+        width: 100%;
+        max-width: 300px;
+        height: 450px;
+        background-color: #1a191fbc;
+        border-bottom: 1px solid #222028;
+        border-radius: 6px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3%;
+        box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.499);
+        backdrop-filter: blur(4px);
+
+        &-errors {
+            border: 2px solid transparent;
+            font-size: 16px;
+            border-radius: 6px;
+            background-color: #f9a200be;
+            padding: 10px 5px;
+            text-align: center;
+        }
+
+        &-subtitle {
+            font-size: 34px;
+            line-height: 44px;
+            color: rgba(255, 255, 255, 0.856);
+            margin-top: 15%;
+            margin-bottom: 10%;
+    
+            &:hover {
+                color: #f9ab00;
+            }
+        }
+
+        &-user {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &-input {
+            margin-bottom: 20px;
+            width: 100%;
+            background-color: #222028;
+            border: 2px solid transparent;
+            height: 46px;
+            position: relative;
+            color: #fff;
+            font-size: 16px;
+            width: 100%;
+            border-radius: 6px;
+            padding: 0 20px;
+        }
+
+        &-btn {
+            height: 40px;
+            width: 120px;
+            border: 2px solid #f9ab00;
+            border-radius: 6px;
+            background-color: transparent;
+            color: #fff;
+            font-size: 13px;
+            padding: 5px 15px;
+            cursor: pointer;
+            white-space: nowrap;
+
+            &:hover {
+                background-color: rgba(249,171,0,0.05);
+                scale: 1.1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .sign-in {
+        background-size: contain;
+        background-repeat: revert;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .sign-in {
+        background-size: auto;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .sign-in {
+        height: calc(100vh - 150px);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .sign-in {
+        height: calc(100vh - 130px);
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .sign-in {
+        height: calc(100vh - 175px);
+    }
+}
+
+@media screen and (max-width: 489px) {
+    .sign-in {
+        height: calc(100vh - 161px);
+    }
+}
